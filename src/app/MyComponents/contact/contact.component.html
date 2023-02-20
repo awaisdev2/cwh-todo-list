@@ -1,1 +1,44 @@
-<p>contact works!</p>
+<div class="container my-3">
+    <div class="jumbotron">
+        <h1 class="display-4">Contact us</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet porro labore facilis, aspernatur sunt doloremque nostrum asperiores dolore culpa.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content.</p>
+        <!-- <button class="btn btn-primary btn-lg" id="myModal" role="button">Contact us</button> -->
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Contact us
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+          <h4 class="modal-title">Fill the form below</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter your Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">How can we help you?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
