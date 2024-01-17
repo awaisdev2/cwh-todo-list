@@ -1,5 +1,18 @@
 <div class="my-3"> 
+<<<<<<< HEAD
     <h5>{{todo.title}}</h5>
     <p>{{todo.desc}}</p>
+||||||| 3b330bb
+    <h5 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h5>
+    <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="todo{{i}}" (click)="onCheckboxClick(todo)" [checked]="!todo.active">
+        <label class="form-check-label" for="todo{{i}}">Done</label>
+      </div>
+=======
+    <h5>{{todo.title}}</h5>
+    <p>{{todo.desc}}</p>
+
+>>>>>>> 30f089d24093efa9e031b9e616f9397a35751fea
     <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
 </div> 
